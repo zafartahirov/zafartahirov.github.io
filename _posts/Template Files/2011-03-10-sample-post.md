@@ -3,8 +3,8 @@ layout: post
 title: Sample Post
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2014-12-24
-tags: [sample post]
-categories: [intro]
+tags: [sample post, Template Files]
+categories: [Template Files]
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.

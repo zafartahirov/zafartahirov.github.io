@@ -2,7 +2,7 @@
 layout: post
 title: Sample Post with Feature Image
 description: "Sample Post with Feature Image"
-tags: [sample post]
+tags: [Template Files]
 image:
     feature: feature.jpg
     credit: dargadgetz

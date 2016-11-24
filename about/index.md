@@ -2,6 +2,7 @@
 layout: page
 title: About
 share: true
+comments: false
 ---
 
 # Neo-HPSTR Jekyll Theme
@@ -17,7 +18,7 @@ You can see it running [here](http://blog.rhesoft.com/) and [here](http://aronbo
 
 * Modern design.
 * Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
+* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
 * Sweet topbar animated menu with support for drop-downs.
 * Optional [Disqus](http://disqus.com) comments and social sharing links.
 * [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
