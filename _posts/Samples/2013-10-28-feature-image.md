@@ -3,6 +3,7 @@ layout: post
 title: Sample Post with Feature Image
 description: "Sample Post with Feature Image"
 tags: [Template Files]
+categories: [sample]
 image:
     feature: feature.jpg
     credit: dargadgetz
