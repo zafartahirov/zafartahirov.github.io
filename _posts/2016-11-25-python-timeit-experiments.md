@@ -90,7 +90,7 @@ number of elements in an array, etc., while $$ k = n / 1000 $$
 | `x+y`       | Addition/Subtraction  | $$O(n)$$    | $$0.1 - 0.04k $$          | 12        |
 | `x*y`       | Multiplication        | $$O(n^{\log3})$$  | $$0.1 - 1.6k^{\log3} $$  | 17   |
 | `x/y`       | Division (Remainder)  | $$O(n^2)$$  | $$0.8 - 2.0k^2 $$         | 5.8       |
-| `pow(x,y,z` | Modular Exponentiation| $$O(n^3)$$  | $$ 1071.8 + 3107.9k^3 $$  | 1.7       |
+| `pow(x,y,z)`| Modular Exponentiation| $$O(n^3)$$  | $$ 1071.8 + 3107.9k^3 $$  | 1.7       |
 | `2**n`      | Power of two          | $$O(1)$$    | $$ 0.02 $$                | 0.41      |
 
 [^1]: I was expecting the conversion to be linear, but it is quadratic. After a brief search found [this SO answer](http://stackoverflow.com/a/1845764/3606192) that mentions Python conversion being $$O(n^2)$$

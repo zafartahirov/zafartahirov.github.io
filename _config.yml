@@ -4,11 +4,12 @@ description:      Personal website to show off a collection :)
 disqus_shortname: z-scale
 reading_time:     true # if true, shows the estimated reading time for a post
 words_per_minute: 200
-logo:             images/logo.svg # logo visible in the topbar
+logo:             images/logo.png
+#logo:             images/logo.svg # logo visible in the topbar
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 
-url: //zafar.cc
+url: http://zafar.cc
 # url: http://localhost:4000
 
 # draw your top menu here
