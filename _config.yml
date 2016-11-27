@@ -18,7 +18,7 @@ url: //zafar.cc
 # See the example
 menu:
   - title: 'About Me'
-    url: '/About'
+    url: '/about'
   - title: 'Projects'
     url: '#'
     submenu:
