@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python Running Time Experiments"
-categories: [Python, JUNK codes]
+categories: [python]
 description:
 tags: [python, runtime, algorithms]
 comments: true
