@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python Running Time Experiments"
-categories: [Interview Solutions]
+categories: [InterviewSolutions]
 description:
 tags: [python, c/c++, algorithm, data structure]
 comments: true
