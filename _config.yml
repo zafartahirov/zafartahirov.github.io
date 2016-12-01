@@ -37,7 +37,8 @@ menu:
       - title: 'CTF'
         url: 'http://ctf.zafar.cc/'
       - title: 'Interview Preparation'
-        url: 'http://interview.zafar.cc/'
+        # url: 'http://interview.zafar.cc/'
+        url: 'http://prep.zafar.cc/'
   - title: 'All Posts'
     url: '/posts'
     submenu:
