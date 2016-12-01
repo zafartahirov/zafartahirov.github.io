@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python Running Time Experiments"
+title: "Preparing for an Interview"
 categories: [InterviewSolutions]
 description:
 tags: [python, c/c++, algorithm, data structure]
