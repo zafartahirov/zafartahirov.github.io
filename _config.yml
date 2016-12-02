@@ -62,7 +62,7 @@ owner:
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
-twitter:
+twitter: TJzafar
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
@@ -128,4 +128,4 @@ titlecase: true
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap]
