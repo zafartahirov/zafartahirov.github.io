@@ -35,7 +35,7 @@ Difference in the results is caused by background processes
 ([source](https://docs.python.org/2/library/timeit.html#timeit.Timer.repeat)).
 
 Here is an example of a run
-{% highlight python %}
+{% highlight python linenos %}
 print "Test List-1: create an empty list"
 spec_string = "1<=n<=10"
 growth_factor = 2
