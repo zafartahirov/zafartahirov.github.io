@@ -16,11 +16,16 @@
   <article class="hentry hentry-dark">
     <div class="entry-content">
       {% if page.image.feature %}
-          <div class="entry-image-index">
-            <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
-            {% if page.image.credit %}<div class="image-credit">Image source: <a target="_blank" href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
-          </div>
-      {% endif %}
+            <div class="entry-image-index">
+              {% capture imgHTTP %}{{ page.image.feature | slice: 0, 4 }}{% endcapture %}
+              {% if imgHTTP == "http" %}
+                <img src="{{ page.image.feature }}" alt="{{ page.title }}">
+              {% else %}
+                <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+              {% endif %}
+              {% if page.image.credit %}<div class="image-credit">Image source: <a target="_blank" href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
+            </div>
+        {% endif %}
       <h1 class="post-title entry-title">{{ page.title }}</h1>
       {{ content }}
       <footer class="entry-meta">
