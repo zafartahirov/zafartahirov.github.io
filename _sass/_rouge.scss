@@ -1,16 +1,37 @@
 .highlight {
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 	@include font(12);
 	color: #d0d0d0;
-	border: 1px solid darken($body-color, 5);
+	// border: 1px solid darken($body-color, 5);
 	background-color: #272822;
 	@include rounded(4px);
 	pre {
 		position: relative;
-		margin: 0;
+		margin: 2px;
 		padding: 0.5em;
+		//
+		counter-reset: line-numbering;
+    // border: solid 1px #d9d9d9;
+    border-radius: 0;
+   	// background: #fff;
+    // padding: 0;
+    // line-height: 18px;
+    //margin-bottom: 0px;
+    white-space: pre;
+    overflow-x: auto;
+    overflow-y: hidden;
+    word-break: inherit;
+    word-wrap: inherit;
 	}
-	.lineno { padding-right: 8px; color: #8f908a;}
+	.gutter {
+		border-right: solid 1px #8f908a;
+		float: left;
+	}
+	.lineno { padding-right: 2px; color: #8f908a; }
+	.code {
+		padding-left: 10px;
+		float: left;
+	}
 	.hll { background-color: #49483e }
 	.c { color: #75715e } /* Comment */
 	.err { color: #960050; background-color: #1e0010 } /* Error */
