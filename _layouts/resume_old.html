@@ -1,0 +1,263 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body id="page">
+
+{% include browser-upgrade.html %}
+{% include header.html %}
+
+<link rel="stylesheet" href="/assets/css/resume.css">
+<div id="main" role="main">
+  <article class="hentry">
+    <div class="entry-content">
+
+
+<header id="header" class="clear">
+  <!-- Download -->
+  {% if page.resume.gdoc %}
+    <div class="download">
+      <span class="url">
+        <a href="https://docs.google.com/document/d/{{ page.resume.gdoc }}/export?format=pdf">
+          <i class="fa fa-file-pdf-o"></i>PDF
+        </a>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="url">
+        <a href="https://docs.google.com/document/d/{{ page.resume.gdoc }}/export?format=docx">
+          <i class="fa fa-file-word-o"></i>DOCX
+        </a>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="url">
+        <a href="https://docs.google.com/document/d/{{ page.resume.gdoc }}/export?format=txt">
+          <i class="fa fa-file-text"></i>TXT
+        </a>
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="url">
+        <a href="https://docs.google.com/document/d/{{ page.resume.gdoc }}/edit?usp=sharing">
+          <i class="fa fa-file-text"></i>HTML
+        </a>
+      </span>
+    </div>
+  {% endif %}
+
+  <!-- Avatar and Name -->
+  {% if page.avatar %}<img class="picture" src="{{ page.avatar }}" alt="{{ page.fullname }}"> {% endif %}
+  <div class="middle">
+    <h1 class="name">{{ page.fullname }} </h1>
+    <h2 class="label">{{ page.position }}</h2>
+  </div>
+
+  <!-- Address -->
+  <span class="location">
+    <span class="address">
+      {{ page.location.address}},
+    </span>
+    <span class="city">
+    {{ page.location.city}},
+    </span>
+    <span class="region">
+    {{ page.location.state }}
+    </span>
+    <span class="postalCode">
+      {{ page.location.zipcode }},
+    </span>
+    <span class="countryCode">
+      {{ page.location.country}}
+    </span>
+  </span>
+
+  <!-- Contact info -->
+  <div id="contact">
+    {% for email in page.contact.email %}
+    <div class="email">
+      <span class="fa fa-envelope-o"></span>
+      <a href="mailto:{{email}}">{{ email }}</a>
+    </div>
+    {% endfor %}
+    {% for phone in page.contact.phone %}
+    <div class="phone">
+      <span class="fa fa-mobile"></span>
+      {{ phone }}
+    </div>
+    {% endfor %}
+    {% for website in page.contact.website %}
+    <div class="website">
+      <span class="fa fa-external-link"></span>
+      <a target="_blank" href="{{ website }}">{{ website }}</a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Social Profiles -->
+  <div id="profiles">
+    {% for profile in page.profiles %}
+      <div class="item">
+        <div class="username">
+          <span class="url">
+            <a href="{{ profile.url }}">
+              {% if profile.classicon %}
+                <i class="{{ profile.classicon }}"></i>
+              {% elsif profile.icon %}
+                <i class="{{ profile.icon.class }}">{{ profile.icon.name }}</i>
+              {% endif %}
+              {{ profile.name }}
+            </a>
+          </span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</header>
+
+<!-- Skills -->
+<section class="section">
+{% for skill in page.skills %}
+  {{ skill[0] }}
+{% endfor %}
+</section>
+
+<!-- Work Experience -->
+<section class="section">
+  <header>
+    <h2 class="section-title">Work Experience <span class="item-count">({{ page.work.size }})</span></h2>
+  </header>
+  <section id="work">
+    {% for position in page.work %}
+      <header>
+        <div class="position">
+          {{ position.position }}
+        </div>
+        <div class="company">
+          {{ position.company }}
+        </div>
+        <div class="date">
+          <span class="startDate">
+            {{ position.start }}
+          </span>
+          <span class="endDate">
+            - {{ position.end }}
+          </span>
+        </div>
+      </header>
+      <span class="website">
+        <a href="{{ position.website }}">{{ position.website }}</a>
+      </span>
+      <div class="item">
+        {% if position.description %}
+        <div class="summary">
+          <p>{{ position.description }}</p>
+        </div>
+        {% endif %}
+        <ul class="highlights">
+          {% for ach in position.achievements %}
+          <li>{{ ach }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </section>
+</section>
+
+<!-- Teaching Experience -->
+{% if page.teaching %}
+<section class="section">
+  <header>
+    <h2 class="section-title">Teaching Experience <span class="item-count">({{ page.teaching.size }})</span></h2>
+  </header>
+  <section id="work">
+    {% for position in page.teaching %}
+      <header>
+        <div class="position">
+          {{ position.position }}
+        </div>
+        <div class="date">
+          <span class="startDate">
+            {{ position.start }}
+          </span>
+          <span class="endDate">
+            - {{ position.end }}
+          </span>
+        </div>
+      </header>
+      <span class="website">
+        {{ position.class }}
+      </span>
+      <div class="company">
+        {{ position.university }}
+      </div>
+      <div class="item">
+        {% if position.description %}
+        <div class="summary">
+          <p>{{ position.description }}</p>
+        </div>
+        {% endif %}
+        <ul class="highlights">
+          {% for ach in position.achievements %}
+          <li>{{ ach }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </section>
+</section>
+{% endif %}
+
+
+<!-- Keywords -->
+<section class="section margin1">
+  <header>
+    <h3 class="section-title">Keyword Map</h3>
+  </header>
+  <section id="skills">
+    {% for area in page.keywords %}
+      <div class="item">
+        <h3 class="name">
+          {{ area.title }}
+        </h3>
+        {% if area.level %}
+        <div class="level {{ area.level | downcase }}">
+          <em>{{ area.level }}</em>
+          <div class="bar"></div>
+          {{ area.note }}
+        </div>
+        {% endif %}
+        <ul class="keywords">
+          {% for keyword in area.keywords %}
+          <li>{{ keyword }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </section>
+</section>
+
+
+{{ content }}
+      <footer class="entry-meta">
+        {% if page.modified %}<span>Updated on <span class="entry-date date published updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
+      </footer>
+    </div><!-- /.entry-content -->
+    {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+  </article>
+</div><!-- /#main -->
+
+{% include scripts.html %}
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+</body>
+</html>

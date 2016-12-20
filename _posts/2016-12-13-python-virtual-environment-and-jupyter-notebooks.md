@@ -17,6 +17,8 @@ If you work in Python only occasionally, and don't need different versions of pa
 This is more of a "I know what Python is, and I am ready to start with more advance stuff, like running it... or contributing to other people's codes, but I don't wanna screw up whatever I have on my machine, and how do I do that again?" type of thing
 
 <!-- more -->
+* Table of Contents
+{:toc}
 
 I am assuming you are using `Python 2.7`, because `~>3.3` has the `venv` module already, and doesn't require this setup. In `Python >3.3`, you can just do `pyvenv ~/.virtualenv/`, and it will create it for you. The following is for those of us who use Python 2.x, and refuse to switch :)
 
@@ -25,7 +27,7 @@ Also, all the setups are tested on MAC OS X Sierra
 ## Prerequisites
 If you haven't already install `pip`, `easy_install`, `XCode`, etc! If you haven't done it already, stop reading!!! and get back to whatever you were doing before... Like building colorful towers from plastic blocks or something... Seriously, go away!
 
-## 1. How to install `virtualenv`
+# How to install `virtualenv`
 
 ```bash
 # Installing venv
@@ -60,7 +62,7 @@ fi
 EOF
 ```
 
-## 2. Using Python Virtual Environments (with wrapper)
+# Using Python Virtual Environments (with wrapper)
 
 All the flags for the commands could be found with a `--help` flag. Commands you need to know:
 
@@ -86,7 +88,7 @@ $>
 
 Notice that your command prompt changes to indicate that you are in a virtual environment. At this point, any actions you do with python related stuff will be relative to that environment. You can install new packages without them affecting the ones you have already installed.
 
-### What if I want to use packages installed globally?
+## What if I want to use packages installed globally?
 
 If you have installed some big packages, you might want to keep them global, while installing smaller packages, and packages that you are developing in the isolated environment. You can use `--system-site-packages` flag to show that you want to use the global packages.
 
@@ -111,7 +113,7 @@ $> workon globalenv
 '1.11.2'
 {% endhighlight %}
 
-## 3. Using Virtual Environments with Jupyter Notebooks
+# Using Virtual Environments with Jupyter Notebooks
 
 Assuming you have [Jupyter installed](http://jupyter.readthedocs.io/en/latest/install.html),
 create a new file '~/.ipython/profile_default/startup/00-virtualenv.py', and paste the following Gist
