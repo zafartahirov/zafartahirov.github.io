@@ -1,7 +1,5 @@
 # Zafar's Personal Page
 
-Still working on it
-
 ========================
 # Neo-HPSTR Jekyll Theme
 
