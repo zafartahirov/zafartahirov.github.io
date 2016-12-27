@@ -6,6 +6,7 @@ description:
 tags: [python, c/c++, algorithm, data structure]
 comments: true
 share: true
+date: 2016/11/01
 image:
   feature: https://assets-cdn.github.com/images/modules/site/squares.png
   credit: GitHub
