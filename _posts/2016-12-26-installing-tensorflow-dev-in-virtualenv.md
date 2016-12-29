@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Installing TensorFlow Dev in VirtualEnv"
+title: "Contributing to TensorFlow Community"
 modified: 2016-12-26 20:31:02 -0800
-tags: [python,tensorflow,virtualenv]
+tags: [python,tensorflow,opensource]
 categories: [tensorflow,python]
 image:
   background: https://www.tensorflow.org/images/hero-bg@2x.jpg
