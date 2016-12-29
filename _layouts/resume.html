@@ -226,7 +226,7 @@
                         <small>
                           <span class="space-right">
                             {{ start | date: "%b, %Y" }}
-                            -
+                            &mdash;
                             {% if job.endDate %}
                               {{ end | date: "%b, %Y" }}
                             {% else %}
@@ -285,10 +285,12 @@
                           </p>
                           <p class="text-muted">
                             <small>
-                              {{ school.startDate}} - {% if school.endDate %}{{ school.endDate }}{% else %}Present{% endif %}
+                              {{ school.startDate}} &mdash; {% if school.endDate %}{{ school.endDate }}{% else %}Present{% endif %}
                             </small>
                           </p>
+                          {% if page.resume.gpa != false %}
                           <i>{{ school.gpa }}</i>
+                          {% endif %}
                           {% if school.courses.size > 0 %}
                             <div class="space-top labels">
                               {% for course in school.courses %}
@@ -350,7 +352,7 @@
                           <strong>{{ volunt.position }}, </strong><a href="{{ volunt.website }}" target="_blank">{{ volunt.organization }}</a>
                         </p>
                         <p class="text-muted"><small>
-                          {{ volunt.startDate}} - {% if volunt.endDate %}{{ volunt.endDate }}{% else %}Present{% endif %}
+                          {{ volunt.startDate}} &mdash; {% if volunt.endDate %}{{ volunt.endDate }}{% else %}Present{% endif %}
                         </small></p>
                         <div class="mop-wrapper">
                           <p>{{ volunt.summary }}</p>

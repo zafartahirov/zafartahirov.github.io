@@ -10,4 +10,5 @@ resume:
     pdf: fa fa-file-pdf-o
     docx: fa fa-file-word-o
     txt: fa fa-file-text
+  gpa: false
 ---
