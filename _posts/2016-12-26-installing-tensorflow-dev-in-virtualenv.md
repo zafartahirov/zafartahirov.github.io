@@ -21,6 +21,8 @@ Installing the TensorFlow (TF) is fairly well documented in the [official docume
 
 # Install Using `pip` (non-dev)
 
+__Note: You might need the `non-developer`, stable version of TF if you work on other machine learning projects__
+
 We will be using a Virtual Environment `tf-env`.
 Note, that you will need to have `virtualenv` and `virtualenvwrapper` [installed]({% post_url 2016-12-13-python-virtual-environment-and-jupyter-notebooks %}).
 
