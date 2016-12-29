@@ -139,7 +139,7 @@ Run the configuration -- I will not go through every question, as it is well doc
 (tf-dev-env)$ git checkout -b r0.12 # Create a local branch
 (tf-dev-env)$ ./configure
   ~/GitHub/tensorflow ~/GitHub/tensorflow
-  Please specify the location of python. [Default is /Users/zafar/.virtualenvs/tf-dev-env/bin/python]:
+  Please specify the location of python. [Default is ~/.virtualenvs/tf-dev-env/bin/python]:
   Do you wish to build TensorFlow with Google Cloud Platform support? [y/N] N
   No Google Cloud Platform support will be enabled for TensorFlow
   Do you wish to build TensorFlow with Hadoop File System support? [y/N] N
@@ -148,7 +148,7 @@ Run the configuration -- I will not go through every question, as it is well doc
     ~/.virtualenvs/tf-dev-env/lib/python2.7/site-packages
   Please input the desired Python library path to use.  Default is [~/.virtualenvs/tf-dev-env/lib/python2.7/site-packages]
 
-  Using python library path: /Users/zafar/.virtualenvs/tf-dev-env/lib/python2.7/site-packages
+  Using python library path: ~/.virtualenvs/tf-dev-env/lib/python2.7/site-packages
   Do you wish to build TensorFlow with OpenCL support? [y/N] N
   No OpenCL support will be enabled for TensorFlow
   Do you wish to build TensorFlow with CUDA support? [y/N] N
