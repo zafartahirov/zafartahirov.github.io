@@ -2,7 +2,7 @@
 layout: post
 title: "Setup: Python Virtual Environment and Jupyter Notebooks"
 modified: 2016-12-13 14:22:21 -0800
-tags: [setup,python,venv,jupyter]
+tags: [setup,python,virtualenv,jupyter]
 categories: [setup,python]
 image:
   feature:
