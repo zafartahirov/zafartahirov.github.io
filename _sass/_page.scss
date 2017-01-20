@@ -398,6 +398,8 @@ ul.social-buttons li a:active {
 	}
 	img {
 		@include border-radius(3px,0,0,3px); // round image corners
+		display:block;
+    margin:auto;
 	}
 }
 
