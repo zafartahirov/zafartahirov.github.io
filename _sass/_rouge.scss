@@ -17,20 +17,25 @@
     // padding: 0;
     // line-height: 18px;
     //margin-bottom: 0px;
-    white-space: pre;
-    overflow-x: auto;
-    overflow-y: hidden;
-    word-break: inherit;
-    word-wrap: inherit;
+    // white-space: pre;
+    // overflow-x: auto;
+    // overflow-y: hidden;
+    // word-break: inherit;
+    // word-wrap: inherit;
 	}
 	.gutter {
 		border-right: solid 1px #8f908a;
-		float: left;
+		// float: left;
 	}
 	.lineno { padding-right: 2px; color: #8f908a; }
 	.code {
 		padding-left: 10px;
 		float: left;
+		    white-space: pre;
+    overflow-x: auto;
+    overflow-y: hidden;
+    word-break: inherit;
+    word-wrap: inherit;
 	}
 	.hll { background-color: #49483e }
 	.c { color: #75715e } /* Comment */

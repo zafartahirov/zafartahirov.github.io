@@ -1,0 +1,30 @@
+---
+layout: post
+title: "SVM notes"
+modified: 2017-02-14 15:05:49 -0500
+tags: [machine learning, classifier, python, svm]
+image:
+  feature: 
+  credit: 
+  creditlink: 
+comments: 
+share: 
+hidden: true
+---
+
+When I first started using the [scikit-learn](http://scikit-learn.org/stable/)
+Support Vector Machine (SVM) was one of those black boxes I used without really understanding how it 
+worked -- well I still kinda trying to understand it in more details. Let us
+see what is SVM, how to create it from scratch, and how to use it.
+
+## Basic Description
+
+When I first started using the [scikit-learn](http://scikit-learn.org/stable/) SVM was one of those black boxes I used without really understanding how it worked -- well I still kinda trying to understand it in more details. Let us see what is SVM, how to create it from scratch, and how to use it.
+
+![SVM margins](http://scikit-learn.org/stable/_images/sphx_glr_plot_separating_hyperplane_0011.png){:width="70%" margin="0 auto" display="block"} 
+
+SVMs create a line between two classes, and use the points that are the "closest" to the decision boundary as "support" for separation lines -- hence the name. It is a very rough description, so let us go in more formal understanding.
+
+## Prerequisite: Kernel Method
+
+Kernel method is a way of 

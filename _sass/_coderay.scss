@@ -40,7 +40,10 @@ table.CodeRay td {
 ol.CodeRay { font-size: 10pt }
 ol.CodeRay li { white-space: pre }
 
-.CodeRay .code pre { overflow: auto }
+.CodeRay .code pre { 
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: hidden; }
 .CodeRay .debug { color:white ! important; background:blue ! important; }
 
 .CodeRay .doctype,

@@ -28,7 +28,7 @@ The `pickle` file is stored under `$DIR/$WIDTHx$WIDTH.pickle`, where `$DIR` is t
 - `data['labels']` - Targets
 - `data['images']` - Predictors (square images)
 
-```python
+{% highlight python linenos %}
 # -*- coding: utf-8 -*-
 
 import pickle
@@ -49,7 +49,7 @@ for i in range(2):
     idx = np.random.randint(num_points)
     ax[i,j].imshow(images[idx], cmap='Greys_r')
 plt.show()
-```
+{% endhighlight %}
 
 ## How to generate the data
 
