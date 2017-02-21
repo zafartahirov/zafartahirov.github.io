@@ -130,8 +130,8 @@ To separate the hard data points from the easy ones, we will compute the `hard_b
 
 $$
 \begin{align}
-  H_{bias} &= \max{\left(\left|y'_i - y_i\right| \cdot \mathbb{1}_{g(x_i, y_i) \ne g'(x_i, y_i)}\right)}, \\
-  y'_i &= \frac{-.744x - .124}{.0187}
+  H_{bias,i} &= \max{\left(\left|y'_i - y_i\right| \cdot \mathbb{1}_{g(x_i, y_i) \ne g'(x_i, y_i)}\right)}, \\
+  y'_i &= \frac{-.744x_i - .124}{.0187}
 \end{align}
 $$
 
@@ -141,7 +141,7 @@ $$
 \begin{align}
   h(x_i, y_i) &= 
     \begin{cases}
-      +1 \mbox{ (hard, red)}, &\mbox{if } |f'(x_i, y_i)| \le H_{bias} \\
+      +1 \mbox{ (hard, red)}, &\mbox{if } |f'(x_i, y_i)| \le H_{bias,i} \\
       -1 \mbox{ (easy, blue)}, &\mbox{otherwise}
     \end{cases}
 \end{align}
@@ -235,9 +235,9 @@ $$
 
 The equation basically says
 
-> Find a setting for a "chooser" function $$g$$ such that from all given classifiers $$f$$ chooses the one that correctly classifies the current input, while maintaining the budget $$B$$
+> Find a setting for a "chooser" function $$g$$ such that from all given (pre-trained) classifiers $$f$$ chooses the one that correctly classifies the current input, while maintaining the budget $$B$$
 
-In code we will not take the budget $$B$$ into account, and will control it only by the class weight as shown below.
+In the code we will not take the budget $$B$$ into account, and will control it only by the class weight as shown below. This is done for simplicity, and because we don't have actual numbers on how much more complex the "hard" classifier is.
 
 **Step 1. Train the easy and a hard classifier**
 
