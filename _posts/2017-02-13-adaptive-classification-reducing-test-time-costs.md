@@ -12,23 +12,25 @@ share:
 hidden: false
 ---
 
-We use machine learning almost everywhere now, and a lot of research is focused on improving the accuracy, improving the time it takes us to train the networks, improving the complexity, etc... I would like to contribute a little to a slightly different problem: how do make the test time better?
+We use machine learning almost everywhere now, and a lot of research is focused on improving the accuracy, improving the time it takes us to train the networks, improving the complexity, etc... I would like to contribute a little to a slightly different problem: how would we improve test time figures of merit?
 
-Suppose you are controlling a robot using a machine learning algorithm, and would like to increase the battery life. If you don't care about the training time, and accuracy is important, but not when your battery is dying. So how do we go about it?
+Suppose you are controlling a robot using a machine learning algorithm, and would like to increase its battery life. If you don't care about the training time, but test-time accuracy is important, but not as important as your battery life -- how would you go about it?
 
-We have recently released a pwork on hardware of the [adaptive classifiers](http://people.bu.edu/joshi/files/Takhirov-ISLPED-2016.pdf), but let us go step-by-step.
+We have recently released a work on hardware of the [adaptive classifiers](http://people.bu.edu/joshi/files/Takhirov-ISLPED-2016.pdf), but I wanted to give a more "people-friendly" explanation here
 
 You can download the iPython Notebook that I used to generate the images [here](/downloads/adaptive/adaptive.ipynb).
 
 <!-- more -->
 
+The idea is based on selecting from multiple classifiers that differ in complexity and accuracy, such that we maximize all figures of merit at test time.
+
 ## "Hardness" of a problem
 
-Let us define "hardness" of a problem as "how easy is given problem" meaning if I have several classifiers, how complex of a classifier do I need to identify the label correctly. 
+Let us define "hardness" of a problem as "how easy is given problem" meaning if I have several classifiers, how complex of a classifier do I need to use to identify the label correctly. 
 
-### Quick example
+### Quick example on "Hard" problems
 
-As an example, let us look at the [UCI Penbase](http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits) dataset.
+To visualize "hard" data points, let us look at the [UCI Penbase](http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits) dataset. I will use a linear classifier as a classifier for "easy" examples, because it is cheap and fast.
 
 {% comment %}
 {% highlight python linenos %}
@@ -82,7 +84,7 @@ plt.show()
 {% endhighlight %}
 {% endcomment %}
 
-In the images below there are two numbers `T:a/P:b/L:c`. `T` is the true label for the image, `P` is the prediction of the second degree polynomial, and `L` is the result of a linear classifier. That means every time we see problems like these, the linear classifier will fail.
+In the images below I show three numbers `T:a/P:b/L:c`. `T` is the true label for the image, `P` is the prediction of the second degree polynomial, and `L` is the result of a linear classifier. That means every time we see problems like these, the linear classifier will fail.
 
 ![Examples hard for Linear](/images/adaptive/hard_linear.png)
 
