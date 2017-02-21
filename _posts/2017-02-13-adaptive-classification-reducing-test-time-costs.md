@@ -153,9 +153,154 @@ If we analyze the test and train synthetic data, we find out that only a fractio
 
 ### Chooser Function
 
-in order to choose if we want to use a more expensive classifier or not, we use a "chooser" function -- another logistic regression function which would predict the "hardness" of the problem.
+in order to choose if we want to use a more expensive classifier or not, we use a "chooser" function -- another logistic regression function which would predict the "hardness" of the problem. As a first order approximation we will define the chooser as follows:
+
+**Step 1. Create hardness pseudo-labels**
+
+{% highlight python linenos %}
+## Preprocessing stage
+
+# Predict the easy $$y'$$ and find out which ones of them are wrong
+y_prime_easy = easy.predict(X_train)
+wrong = y_prime_easy != y_train
+
+# Compute the regression lines
+a = -easy.coef_[0][0] / easy.coef_[0][1]
+b = -easy.intercept_[0] / easy.coef_[0][1]
+y_prime_easy_regr = X_train[:, 0]*a + b
+
+# Get the bias and compute the pseudo labels
+y_decision_hard_up = y_prime_easy_regr + H_bias
+y_decision_hard_down = y_prime_easy_regr - H_bias
+
+hard = np.logical_and(X_train[:,1] < y_decision_hard_up, X_train[:,1]  > y_decision_hard_down)
+
+# Create a "hardness" envelope
+y_pseudo_1 = -np.ones(y_train.shape)
+y_pseudo_1[X_train[:,1] < y_decision_hard_up] = 1
+y_pseudo_2 = -np.ones(y_train.shape)
+y_pseudo_2[X_train[:,1] > y_decision_hard_down] = 1
+
+y_pseudo = -np.ones(y_train.shape)
+y_pseudo[hard] = 1
+{% endhighlight %}
+
+**Step 2. Train the "chooser"**
+
+{% highlight python linenos %}
+chooser = [LinearSVC(), LinearSVC()]
+chooser[0].fit(X_train, y_pseudo_1)
+chooser[1].fit(X_train, y_pseudo_2)
+
+def chooser_predict(X):
+  hardness = chooser[0].predict(X)*chooser[1].predict(X) # Has to be -1/+1
+  combine = np.zeros(hardness.shape)
+  combine[hardness == -1] = easy.predict(X[hardness == -1])
+  combine[hardness == 1] = hard.predict(X[hardness == 1])
+  return combine
+{% endhighlight %}
+
+![Decisions of Adaptive Classifier](/images/adaptive/synthetic_combine.png)
+
+# Improvement on decision boundaries
+
+We have described above that we create a linear "bias" to separate the hardness, but in reality we can just use incorrectly classified samples as a class, and train the classifier and let it create the boundaries automatically.
+
+## Theory
 
 
+| Given | Description |
+|:---|:---|
+| $$(x_1, y_1), ..., (x_n, y_n) \in \mathcal{X} \times \{1, ..., C\}$$ | Input data / labels |
+| $$f_1, ..., f_k : \mathcal{X} \rightarrow \{1, ..., C\}$$ | Collection of $$k$$ classifiers |
+| $$c_1, ..., c_k \in \mathbb{R}$$ | Cost associated with classifiers $$f$$ |
+| $$g : \mathcal{X} \rightarrow \{1, ..., k\}$$ | "Chooser" function |
+
+|Where | Description |
+|:---|:---|
+| $$\mathcal{X}$$ | Input space |
+| $$\{1, ..., C\}$$ | Collection of output Labels |
+| $$B$$ | Upper bound on the budget |
+
+Need to train the "chooser" such that
+
+$$
+\begin{align}
+  \min_{g \in \mathbb{G}} &\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{k}\mathbb{1}_{f_j(x_i) \ne y_i}\mathbb{1}_{g(x_i)=j}, \\
+  &\mbox{Subject to: } \frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{k}c_j\mathbb{1}_{g(x_i)=j} \le B
+\end{align}
+$$
+
+The equation basically says
+
+> Find a setting for a "chooser" function $$g$$ such that from all given classifiers $$f$$ chooses the one that correctly classifies the current input, while maintaining the budget $$B$$
+
+In code we will not take the budget $$B$$ into account, and will control it only by the class weight as shown below.
+
+**Step 1. Train the easy and a hard classifier**
+
+{% highlight python linenos %}
+# X_train, y_train are the training samples
+easy_train = easy.predict(X_train)
+hard_train = hard.predict(X_train)
+y_pseudo_auto = np.zeros(y_train.shape)
+y_pseudo_auto[easy_train == y_train] = easy_train[easy_train == y_train]
+{% endhighlight %}
+
+**Step 2. Choose the proper Hyperparameters and run the tests**
+
+Decide on the "Weight" of the Hard classes. This is the same as the class weights in the SVMs. This is important because the "hardness" of the classes is a highly skewed classification.
+
+For example, the plots below show how the decision on hardness change with different weight on the "hard" class.
+
+![Decisiont of Adaptive Classifier](/images/adaptive/synthetic_auto_weight.png)
+
+We can also see the utilization at every different setting for the hardness weight hyperparameter:
+
+{% highlight python linenos %}
+class_weights = {-1: 1., +1: 1, 0: 1}
+
+for _ in xrange(10):
+  chooser_auto = LinearSVC(class_weight = class_weights)
+  chooser_auto.fit(X_train, y_pseudo_auto)
+  
+  cls_to_use = chooser_auto.predict(X_test)
+  # cls_to_use = 2*np.abs(cls_to_use) - 1
+
+  y_adaptive = np.zeros(cls_to_use.shape)
+  y_adaptive[cls_to_use == 1] = easy.predict(X_test[cls_to_use == 1])
+  y_adaptive[cls_to_use == -1] = easy.predict(X_test[cls_to_use == -1])
+  if np.sum(cls_to_use == 0) > 0:
+    # print "Found zeros"
+    y_adaptive[cls_to_use == 0] = hard.predict(X_test[cls_to_use == 0])
+
+  print "Test Accuracy @ hard weight = {:.1f} : {:.2%}".format(class_weights[0], np.mean(y_adaptive == y_test))
+  print "\tHard Utilization: {:.2%}".format(np.mean(cls_to_use == 0))
+  class_weights[0] *= 3.
+{%endhighlight %}
+
+```
+Test Accuracy @ hard weight = 1.0 : 95.25%
+  Hard Utilization: 0.00%
+Test Accuracy @ hard weight = 3.0 : 95.25%
+  Hard Utilization: 0.00%
+Test Accuracy @ hard weight = 9.0 : 96.00%
+  Hard Utilization: 1.00%
+Test Accuracy @ hard weight = 27.0 : 98.00%
+  Hard Utilization: 14.25%
+Test Accuracy @ hard weight = 81.0 : 97.75%
+  Hard Utilization: 23.25%
+Test Accuracy @ hard weight = 243.0 : 98.25%
+  Hard Utilization: 28.50%
+Test Accuracy @ hard weight = 729.0 : 98.25%
+  Hard Utilization: 31.25%
+Test Accuracy @ hard weight = 2187.0 : 98.25%
+  Hard Utilization: 31.75%
+Test Accuracy @ hard weight = 6561.0 : 98.50%
+  Hard Utilization: 32.75%
+Test Accuracy @ hard weight = 19683.0 : 98.50%
+  Hard Utilization: 33.00%
+```
 
 ---
 
