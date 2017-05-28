@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/rafazz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://zafar.cc
+  * I am rafazz (https://keybase.io/rafazz) on keybase.
+  * I have a public key ASB2gQ1SGB0RP0hlnOhsCZ2IET-jObyFwt5ZVeBBUblGgwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012076810d52181d113f48659ce86c099d88113fa339bc85c2de5955e04151b946830a",
+            "host": "keybase.io",
+            "kid": "012076810d52181d113f48659ce86c099d88113fa339bc85c2de5955e04151b946830a",
+            "uid": "701ab49e4a5bfdbac140df5a4c473419",
+            "username": "rafazz"
+        },
+        "service": {
+            "hostname": "zafar.cc",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.23"
+    },
+    "ctime": 1496006609,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1496006552,
+        "hash": "9db0ae87267f7a57773e341c8bba66f6af796ce199e3e7e1d8bb2122639fcdd736ad24487530a493dacf2bf74bd41840c5e392171e51a426655c45850cb07d8c",
+        "seqno": 1124244
+    },
+    "prev": "e28699d4e5fa434609346e7bc6df394e9a9765dbb951777912cc238a28f14172",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgdoENUhgdET9IZZzobAmdiBE/ozm8hcLeWVXgQVG5RoMKp3BheWxvYWTFAu57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNzY4MTBkNTIxODFkMTEzZjQ4NjU5Y2U4NmMwOTlkODgxMTNmYTMzOWJjODVjMmRlNTk1NWUwNDE1MWI5NDY4MzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNzY4MTBkNTIxODFkMTEzZjQ4NjU5Y2U4NmMwOTlkODgxMTNmYTMzOWJjODVjMmRlNTk1NWUwNDE1MWI5NDY4MzBhIiwidWlkIjoiNzAxYWI0OWU0YTViZmRiYWMxNDBkZjVhNGM0NzM0MTkiLCJ1c2VybmFtZSI6InJhZmF6eiJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiemFmYXIuY2MiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIzIn0sImN0aW1lIjoxNDk2MDA2NjA5LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTYwMDY1NTIsImhhc2giOiI5ZGIwYWU4NzI2N2Y3YTU3NzczZTM0MWM4YmJhNjZmNmFmNzk2Y2UxOTllM2U3ZTFkOGJiMjEyMjYzOWZjZGQ3MzZhZDI0NDg3NTMwYTQ5M2RhY2YyYmY3NGJkNDE4NDBjNWUzOTIxNzFlNTFhNDI2NjU1YzQ1ODUwY2IwN2Q4YyIsInNlcW5vIjoxMTI0MjQ0fSwicHJldiI6ImUyODY5OWQ0ZTVmYTQzNDYwOTM0NmU3YmM2ZGYzOTRlOWE5NzY1ZGJiOTUxNzc3OTEyY2MyMzhhMjhmMTQxNzIiLCJzZXFubyI6NSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAmUyJJUrysw/YGt37IRolXY4+cAdhoelUq4ecfS+PLdviqn9BWH5y/lsX9y03r4q1okibyHz6mnlqQuXY2fDsHqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgWz5v9TDYIWkbVXoTHESQK4cVDWVW6fZO2tOwLYolYVajdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rafazz
+
+==================================================================
