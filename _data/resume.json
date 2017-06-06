@@ -1,340 +1,353 @@
 {
-  "basics": {
-    "name": "Zafar Takhirov",
-    "label": "HW/SW Engineer",
-    "picture": "https://avatars3.githubusercontent.com/u/4216323?v=3&s=460",
-    "emails": ["&#122;&#97;&#102;&#97;&#114;&#64;&#98;&#117;&#46;&#101;&#100;&#117;", "&#99;&#99;&#46;&#114;&#97;&#102;&#97;&#122;&#64;&#122;&#97;&#102;&#97;&#114;&#46;&#99;&#99;"],
-    "email": "&#99;&#99;&#46;&#114;&#97;&#102;&#97;&#122;&#64;&#122;&#97;&#102;&#97;&#114;&#46;&#99;&#99;",
-    "phone": "&#40;&#54;&#49;&#55;&#41;&#32;&#56;&#50;&#54;&#45;&#57;&#54;&#54;&#54;",
-    "website": "http://www.zafar.cc",
-    "summary": "I am a 5th year PhD student at Boston University, working towards my degree in Computer Engineering. While my work focuses on digital design,error mitigation, and machine learning, my non-work interests range widely from information theory (go Shannon!), quantum computing, grandfather paradox, Star Trek, Little Mermaid, \"why is the grass green?\", 1Q84, etc., etc., etc. If you want to talk about, well, anything - just ping me.",
-    "location": {
-      "address": "Rivermarkt Plaza",
-      "postalCode": "95054",
-      "city": "Santa Clara",
-      "countryCode": "US",
-      "region": "California",
-      "regionShort": "CA"
-    },
+    "basics": {
+        "name": "Zafar Takhirov",
+        "label": "HW/SW Engineer",
+        "picture": "https://avatars3.githubusercontent.com/u/4216323?v=3&s=460",
+        "emails_comment": ["&#122;&#97;&#102;&#97;&#114;&#64;&#98;&#117;&#46;&#101;&#100;&#117;", "&#99;&#99;&#46;&#114;&#97;&#102;&#97;&#122;&#64;&#122;&#97;&#102;&#97;&#114;&#46;&#99;&#99;"],
+        "email": "&#99;&#99;&#46;&#114;&#97;&#102;&#97;&#122;&#64;&#122;&#97;&#102;&#97;&#114;&#46;&#99;&#99;",
+        "phone": "&#40;&#54;&#49;&#55;&#41;&#32;&#56;&#50;&#54;&#45;&#57;&#54;&#54;&#54;",
+        "website": "http://www.zafar.cc",
+        "summary_old": "I am a 5th year PhD student at Boston University, working towards my degree in Computer Engineering. While my work focuses on digital design,error mitigation, and machine learning, my non-work interests range widely from information theory (go Shannon!), quantum computing, grandfather paradox, Star Trek, Little Mermaid, \"why is the grass green?\", 1Q84, etc., etc., etc. If you want to talk about, well, anything - just ping me.",
+        "summary": "While my work during my schooling focused on digital design, error mitigation, and machine learning, my non-work interests range widely from information theory (go Shannon!), quantum computing, grandfather paradox, Star Trek, Little Mermaid, \"why is the grass green?\", 1Q84, etc., etc., etc. If you want to talk about, well, anything - just ping me.",
+        "location": {
+            "address": "Rivermarkt Plaza",
+            "postalCode": "95054",
+            "city": "Santa Clara",
+            "countryCode": "US",
+            "region": "California",
+            "regionShort": "CA"
+        },
 
-    "profiles": [
-      {
-        "network": "GitHub",
-        "username": "zafartahirov",
-        "url": "https://github.com/zafartahirov",
-        "classicon": "fa fa-github"
-      },
-      {
-        "network": "LinkedIn",
-        "username": "zafar-takhirov",
-        "url": "https://www.linkedin.com/in/zafartakhirov",
-        "classicon": "fa fa-linkedin"
-      },
-      {
-        "network": "StackOverflow",
-        "username": "RafazZ",
-        "url": "http://stackoverflow.com/users/3606192/rafazz",
-        "classicon": "fa fa-stack-overflow"
-      },
-    ]
-  },
-  "work": [
-    {
-      "company": "Boston University",
-      "position": "Research Assistant",
-      "website": "http://www.bu.edu/icsg/",
-      "startDate": "2011-09-01",
-      "summary": "Worked on several projects as part of ICSG group, including",
-      "highlights": [
-        "Energy-efficient Machine Learning Algorithms and implementation",
-        "Error avoidance/mitigation in digital circuits",
-        "Equalization in chip-to-chip interconnects"
-      ]
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "zafartahirov",
+                "url": "https://github.com/zafartahirov",
+                "classicon": "fa fa-github"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "zafar-takhirov",
+                "url": "https://www.linkedin.com/in/zafartakhirov",
+                "classicon": "fa fa-linkedin"
+            },
+            {
+                "network": "StackOverflow",
+                "username": "RafazZ",
+                "url": "http://stackoverflow.com/users/3606192/rafazz",
+                "classicon": "fa fa-stack-overflow"
+            },
+        ]
     },
-    {
-      "company": "Avicennas Group, Inc.",
-      "position": "CTO",
-      "website": "http://avicennas.com/",
-      "startDate": "2015-05-25",
-      "endDate": "2016-02-01",
-      "summary": "Bringing the digital into the healthcare :)",
-      "highlights": [
-        "NodeJS/AngularJS/ExpressJS/MySQL - Which one doesn't belong? :)",
-        "Managing a team of 5 engineers",
-        "Being on coffee 80 hours a week!"
-      ]
+    "work": [
+        {
+            "company": "Didi Research America, LLC",
+            "position": "Software Developer II",
+            "startDate": "2017-05-29",
+            "summary": "Making self-driving cars possible",
+            "highlights": [
+                "I fooled you, I fooled you, I got pig iron, I got pig iron, I got all pig iron...",
+                "What can be cooler than robots and lazers? I get to work with both :)"
+            ]
+        },
+        {
+            "company": "Boston University",
+            "position": "Research Assistant",
+            "website": "http://www.bu.edu/icsg/",
+            "startDate": "2011-09-01",
+            "endDate": "2017-08-01",
+            "summary": "Worked on several projects as part of ICSG group, including",
+            "highlights": [
+                "Energy-efficient Machine Learning Algorithms and implementation",
+                "Error avoidance/mitigation in digital circuits",
+                "Equalization in chip-to-chip interconnects"
+            ]
+        },
+        {
+            "company": "Avicennas Group, Inc.",
+            "position": "CTO",
+            "website": "http://avicennas.com/",
+            "startDate": "2015-05-25",
+            "endDate": "2016-02-01",
+            "summary": "Bringing the digital into the healthcare :)",
+            "highlights": [
+                "NodeJS/AngularJS/ExpressJS/MySQL - Which one doesn't belong? :)",
+                "Managing a team of 5 engineers",
+                "Being on coffee 80 hours a week!"
+            ]
 
-    },
-    {
-      "company": "Analog Devices, Inc.",
-      "position": "Mixed-Signal Verification Engineer",
-      "website": "http://www.analog.com/",
-      "startDate": "2014-02-15",
-      "endDate": "2015-02-15",
-      "summary": "Worked as part of the automotive group",
-      "highlights": [
-        "Was responsible for design verification of analog and digital blocks",
-        "Worked on 3 projects to develop and deploy UVM and real-number modeling environment",
-        "Participated in functional safety discussion (ISO 26262)"
-      ]
-    },
-    {
-      "company": "Analog Devices, Inc.",
-      "position": "Mixed-Signal Design Engineering Intern",
-      "website": "http://www.analog.com/",
-      "startDate": "2013-05-20",
-      "endDate": "2013-12-24",
-      "summary": "",
-      "highlights": [
-        "Implemented RNM system for simulation speed up (1000x in average)",
-        "Was involved in mixed-signal design flow",
-        "Co-developed calibration mechanism for a mixed-signal system"
-      ]
-    }
-  ],
-  "volunteer": [],
-  "education": [
-    {
-      "institution": "Boston University",
-      "area": "Computer Engineering",
-      "studyType": "Ph.D",
-      "startDate": "2012-09-01",
-      "gpa": "3.5",
-      "courses": [
-        "Dissertation: Designing Energy-Efficient Computing Systems using Equalization and Machine Learning",
-        "Learning From Data (Machine Learning Algorithms)",
-        "Artificial Intelligence"
-      ]
-    },
-    {
-      "institution": "Boston University",
-      "area": "Computer Engineering",
-      "studyType": "M.S.",
-      "startDate": "2009-09-01",
-      "endDate": "2012-05-24",
-      "gpa": "3.49",
-      "courses": [
-        "Advanced Digital Design",
-        "Computer Architecture",
-        "Design of Secure Computer Systems"
-      ]
-    },
-    {
-      "institution": "Russian-Tajik (Slavic) University",
-      "area": "German Linguistics",
-      "studyType": "Specialist (with Distinction)",
-      "startDate": "2003-09-01",
-      "endDate": "2008-05-24",
-      "gpa": "4.0",
-      "courses": [
-        "Thesis: Neologisms and Slang in German Languages"
-      ]
-    }
-  ],
-  "awards": [],
-  "publications": [
-    {
-      "name": "[Novel Algorithm for Adaptive Classification]",
-      "publisher": "[Publication not Released -- in preparation]",
-      "releaseDate": "",
-      "website": "",
-      "summary": "A new adaptive algorithm was developed and implemented."
-    },
-    {
-      "name": "[Scalable Random Forests Implementation]",
-      "publisher": "[Publication not Released -- pending]",
-      "releaseDate": "",
-      "website": "",
-      "summary": "Developed a novel energy-efficient scalable algorithm based on Random Forests."
-    },
-    {
-      "name": "Energy-Efficient Adaptive Classifier Design for Mobile Systems",
-      "publisher": "IEEE ISLPED'16",
-      "releaseDate": "2016-08-08",
-      "website": "http://dx.doi.org/10.1145/2934583.2934615",
-      "summary": "Implemented an algorithm that leverages the wide variability in data complexity to allow dynamic resource allocation in classification problems"
-    },
-    {
-      "name": "Energy-efficient pass-transistor-logic using decision feedback equalization",
-      "publisher": "IEEE ISLPED'13",
-      "releaseDate": "2013-09-04",
-      "website": "http://dx.doi.org/10.1109/ISLPED.2013.6629319",
-      "summary": ""
-    },
-    {
-      "name": "A multi-layer approach to green computing: Designing energy-efficient digital circuits and manycore architectures",
-      "publisher": "IEEE IGCC'12",
-      "releaseDate": "2012-06-04",
-      "website": "http://dx.doi.org/10.1109/IGCC.2012.6322276",
-      "summary": ""
-    },
-    {
-      "name": "Error mitigation in digital logic using a feedback equalization with schmitt trigger (FEST) circuit",
-      "publisher": "IEEE ISQED'12",
-      "releaseDate": "2012-03-19",
-      "website": "http://dx.doi.org/10.1109/ISQED.2012.6187511",
-      "summary": ""
-    },
-    {
-      "name": "A preliminary look at error avoidance in digital logic via feedback equalization",
-      "publisher": "IEEE Allerton Conferece",
-      "releaseDate": "2011-09-28",
-      "website": "http://dx.doi.org/10.1109/Allerton.2011.6120329",
-      "summary": ""
-    }
-  ],
-  "skills": [
-    {
-      "name": "Programming Languages",
-      "level": "Master",
-      "keywords": [
-        "C/C++",
-        "Python",
-        "(System-)Verilog HDL",
-        "MATLAB",
-        "Scala (Chisel)",
-        "LaTeX",
-      ]
-    },
-    {
-      "name": "FPGA/ASIC/Hardware Tools",
-      "level": "Master",
-      "keywords": [
-        "Power/Timing/Noise analysis",
-        "Formal verification",
-        "Verilog-to-Silicon",
-        "Cadence RTL Compiler",
-        "Cadence SoC Encounter",
-        "Icarus Verilog"
-      ]
-    },
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    },
-    {
-      "language": "Russian",
-      "fluency": "Native Speaker"
-    },
-    {
-      "language": "Tajik",
-      "fluency": "Native Speaker"
-    },
-    {
-      "language": "Turkish",
-      "fluency": "Intermediate"
-    },
-    {
-      "language": "German",
-      "fluency": "Intermediate"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Cats",
-        "Unicorns/Pixies/Fairies"
-      ]
-    },
-    {
-      "name": "Sport",
-      "keywords": [
-        "Soccer",
-        "Kickboxing",
-        "Snowboarding"
-      ]
-    },
-    {
-      "name": "Professional",
-      "keywords": [
-        "Machine Learning",
-        "High Performance Computing",
-        "Energy-Efficient Computing"
-      ]
-    }
-  ],
-  "references": [],
+        },
+        {
+            "company": "Analog Devices, Inc.",
+            "position": "Mixed-Signal Verification Engineer",
+            "website": "http://www.analog.com/",
+            "startDate": "2014-02-15",
+            "endDate": "2015-02-15",
+            "summary": "Worked as part of the automotive group",
+            "highlights": [
+                "Was responsible for design verification of analog and digital blocks",
+                "Worked on 3 projects to develop and deploy UVM and real-number modeling environment",
+                "Participated in functional safety discussion (ISO 26262)"
+            ]
+        },
+        {
+            "company": "Analog Devices, Inc.",
+            "position": "Mixed-Signal Design Engineering Intern",
+            "website": "http://www.analog.com/",
+            "startDate": "2013-05-20",
+            "endDate": "2013-12-24",
+            "summary": "",
+            "highlights": [
+                "Implemented RNM system for simulation speed up (1000x in average)",
+                "Was involved in mixed-signal design flow",
+                "Co-developed calibration mechanism for a mixed-signal system"
+            ]
+        }
+    ],
+    "volunteer": [],
+    "education": [
+        {
+            "institution": "Boston University",
+            "area": "Computer Engineering",
+            "studyType": "Ph.D",
+            "startDate": "2012-09-01",
+            "endDate": "2017-08-01",
+            "gpa": "3.5",
+            "courses": [
+                "Dissertation: Designing Energy-Efficient Computing Systems using Equalization and Machine Learning",
+                "Learning From Data (Machine Learning Algorithms)",
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "institution": "Boston University",
+            "area": "Computer Engineering",
+            "studyType": "M.S.",
+            "startDate": "2009-09-01",
+            "endDate": "2012-05-24",
+            "gpa": "3.49",
+            "courses": [
+                "Advanced Digital Design",
+                "Computer Architecture",
+                "Design of Secure Computer Systems"
+            ]
+        },
+        {
+            "institution": "Russian-Tajik (Slavic) University",
+            "area": "German Linguistics",
+            "studyType": "Specialist (with Distinction)",
+            "startDate": "2003-09-01",
+            "endDate": "2008-05-24",
+            "gpa": "4.0",
+            "courses": [
+                "Thesis: Neologisms and Slang in German Languages"
+            ]
+        }
+    ],
+    "awards": [],
+    "publications": [
+        {
+            "name": "[Novel Algorithm for Adaptive Classification]",
+            "publisher": "[Publication not Released -- in preparation]",
+            "releaseDate": "",
+            "website": "",
+            "summary": "A new adaptive algorithm was developed and implemented."
+        },
+        {
+            "name": "Field of Groves: An Energy-Efficient Random Forest",
+            "publisher": "arXiv preprint arXiv:1704.02978",
+            "releaseDate": "2017-04-10",
+            "website": "https://arxiv.org/abs/1704.02978",
+            "summary": "Developed a novel energy-efficient scalable algorithm based on Random Forests."
+        },
+        {
+            "name": "Energy-Efficient Adaptive Classifier Design for Mobile Systems",
+            "publisher": "IEEE ISLPED'16",
+            "releaseDate": "2016-08-08",
+            "website": "http://dx.doi.org/10.1145/2934583.2934615",
+            "summary": "Implemented an algorithm that leverages the wide variability in data complexity to allow dynamic resource allocation in classification problems"
+        },
+        {
+            "name": "Energy-efficient pass-transistor-logic using decision feedback equalization",
+            "publisher": "IEEE ISLPED'13",
+            "releaseDate": "2013-09-04",
+            "website": "http://dx.doi.org/10.1109/ISLPED.2013.6629319",
+            "summary": ""
+        },
+        {
+            "name": "A multi-layer approach to green computing: Designing energy-efficient digital circuits and manycore architectures",
+            "publisher": "IEEE IGCC'12",
+            "releaseDate": "2012-06-04",
+            "website": "http://dx.doi.org/10.1109/IGCC.2012.6322276",
+            "summary": ""
+        },
+        {
+            "name": "Error mitigation in digital logic using a feedback equalization with schmitt trigger (FEST) circuit",
+            "publisher": "IEEE ISQED'12",
+            "releaseDate": "2012-03-19",
+            "website": "http://dx.doi.org/10.1109/ISQED.2012.6187511",
+            "summary": ""
+        },
+        {
+            "name": "A preliminary look at error avoidance in digital logic via feedback equalization",
+            "publisher": "IEEE Allerton Conferece",
+            "releaseDate": "2011-09-28",
+            "website": "http://dx.doi.org/10.1109/Allerton.2011.6120329",
+            "summary": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming Languages",
+            "level": "Master",
+            "keywords": [
+                "C/C++",
+                "Python",
+                "(System-)Verilog HDL",
+                "MATLAB",
+                "Scala (Chisel)",
+                "LaTeX",
+            ]
+        },
+        {
+            "name": "FPGA/ASIC/Hardware Tools",
+            "level": "Master",
+            "keywords": [
+                "Power/Timing/Noise analysis",
+                "Formal verification",
+                "Verilog-to-Silicon",
+                "Cadence RTL Compiler",
+                "Cadence SoC Encounter",
+                "Icarus Verilog"
+            ]
+        },
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        },
+        {
+            "language": "Russian",
+            "fluency": "Native Speaker"
+        },
+        {
+            "language": "Tajik",
+            "fluency": "Native Speaker"
+        },
+        {
+            "language": "Turkish",
+            "fluency": "Intermediate"
+        },
+        {
+            "language": "German",
+            "fluency": "Intermediate"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": [
+                "Cats",
+                "Unicorns/Pixies/Fairies"
+            ]
+        },
+        {
+            "name": "Sport",
+            "keywords": [
+                "Soccer",
+                "Kickboxing",
+                "Snowboarding"
+            ]
+        },
+        {
+            "name": "Professional",
+            "keywords": [
+                "Machine Learning",
+                "High Performance Computing",
+                "Energy-Efficient Computing"
+            ]
+        }
+    ],
+    "references": [],
 
-  "projects": [
-    {
-      "status": "in progress",
-      "source": "open",
-      "title": "TensorFlow and SciKit Tutorial Library",
-      "website": "#",
-      "startDate": "2016-09-15",
-      "endDate": "",
-      "summary": "Python library for machine learning 'black boxes'",
-      "highlights": [
-      ]
-    },
-    {
-      "status": "in progress",
-      "source": "closed",
-      "title": "RISC-V HW Machine Learning Accelerator",
-      "website": "#",
-      "startDate": "2016-05-15",
-      "endDate": "",
-      "summary": "Hardware co-processor for machine learning acceleration written in Chisel (Scala) and designed layout using Cadence SoC toolchain",
-      "highlights": [
-      ]
-    },
-    {
-      "status": "in progress",
-      "source": "closed",
-      "title": "Identification and Authorization using Fingerprints",
-      "website": "#",
-      "startDate": "2016-04-15",
-      "endDate": "",
-      "summary": "Python library for fingerprint identification using Bozorth 3 algorithm to be used as a substitute for username identification",
-      "highlights": [
-      ]
-    },
-    {
-      "status": "completed",
-      "source": "open",
-      "title": "Fingerprint Visualization",
-      "website": "https://github.com/zafartahirov/fpview",
-      "startDate": "2016-01-15",
-      "endDate": "2016-04-15",
-      "summary": "Python library for fingerprint visualization. Visualization is done for the ridge flow map of the fingerprints for easier 'manual' recognition",
-      "highlights": [
-      ]
-    },
-    {
-      "status": "completed",
-      "source": "closed",
-      "title": "Quadcopter with Machine Learning Navigation",
-      "website": "#",
-      "startDate": "2014-09-15",
-      "endDate": "2015-01-15",
-      "summary": "Quadcopter automation tools using FPGAs written in C++/Verilog",
-      "highlights": [
-      ]
-    },
-    {
-      "status": "completed",
-      "source": "open",
-      "title": "Background Subtraction using FPGA",
-      "website": "https://www.youtube.com/watch?v=X16v6vJxW2E&list=PLkw8tPrWxGDa-jceJPGE3LwS7mAnHFg_v&index=2",
-      "startDate": "2014-01-15",
-      "endDate": "2014-04-15",
-      "summary": "Image background subtraction written in MATLAB and Verilog. The system is implemented on an FPGA and uses a live camera feed to detect anomalies using background subtraction",
-      "highlights": [
-      ]
-    },
-    {
-      "status": "completed",
-      "source": "open",
-      "title": "Handwriting Calculator using Neural Networks",
-      "website": "https://www.youtube.com/watch?v=cFnIjgDxLmk&index=12&list=PLkw8tPrWxGDa-jceJPGE3LwS7mAnHFg_v",
-      "startDate": "2014-04-15",
-      "endDate": "2014-04-15",
-      "summary": "Handwriting recognition system using Multi-Layer Perceptron neural network and implemented in Verilog. The system is trained using Python and tested on Xilinx FPGA board.",
-      "highlights": [
-      ]
-    },
-  ],
+    "projects": [
+        {
+            "status": "in progress",
+            "source": "open",
+            "title": "TensorFlow and SciKit Tutorial Library",
+            "website": "#",
+            "startDate": "2016-09-15",
+            "endDate": "",
+            "summary": "Python library for machine learning 'black boxes'",
+            "highlights": [
+            ]
+        },
+        {
+            "status": "in progress",
+            "source": "closed",
+            "title": "RISC-V HW Machine Learning Accelerator",
+            "website": "#",
+            "startDate": "2016-05-15",
+            "endDate": "",
+            "summary": "Hardware co-processor for machine learning acceleration written in Chisel (Scala) and designed layout using Cadence SoC toolchain",
+            "highlights": [
+            ]
+        },
+        {
+            "status": "in progress",
+            "source": "closed",
+            "title": "Identification and Authorization using Fingerprints",
+            "website": "#",
+            "startDate": "2016-04-15",
+            "endDate": "",
+            "summary": "Python library for fingerprint identification using Bozorth 3 algorithm to be used as a substitute for username identification",
+            "highlights": [
+            ]
+        },
+        {
+            "status": "completed",
+            "source": "open",
+            "title": "Fingerprint Visualization",
+            "website": "https://github.com/zafartahirov/fpview",
+            "startDate": "2016-01-15",
+            "endDate": "2016-04-15",
+            "summary": "Python library for fingerprint visualization. Visualization is done for the ridge flow map of the fingerprints for easier 'manual' recognition",
+            "highlights": [
+            ]
+        },
+        {
+            "status": "completed",
+            "source": "closed",
+            "title": "Quadcopter with Machine Learning Navigation",
+            "website": "#",
+            "startDate": "2014-09-15",
+            "endDate": "2015-01-15",
+            "summary": "Quadcopter automation tools using FPGAs written in C++/Verilog",
+            "highlights": [
+            ]
+        },
+        {
+            "status": "completed",
+            "source": "open",
+            "title": "Background Subtraction using FPGA",
+            "website": "https://www.youtube.com/watch?v=X16v6vJxW2E&list=PLkw8tPrWxGDa-jceJPGE3LwS7mAnHFg_v&index=2",
+            "startDate": "2014-01-15",
+            "endDate": "2014-04-15",
+            "summary": "Image background subtraction written in MATLAB and Verilog. The system is implemented on an FPGA and uses a live camera feed to detect anomalies using background subtraction",
+            "highlights": [
+            ]
+        },
+        {
+            "status": "completed",
+            "source": "open",
+            "title": "Handwriting Calculator using Neural Networks",
+            "website": "https://www.youtube.com/watch?v=cFnIjgDxLmk&index=12&list=PLkw8tPrWxGDa-jceJPGE3LwS7mAnHFg_v",
+            "startDate": "2014-04-15",
+            "endDate": "2014-04-15",
+            "summary": "Handwriting recognition system using Multi-Layer Perceptron neural network and implemented in Verilog. The system is trained using Python and tested on Xilinx FPGA board.",
+            "highlights": [
+            ]
+        },
+    ],
 }
