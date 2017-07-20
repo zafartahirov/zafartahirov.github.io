@@ -53,7 +53,7 @@ owner:
   name:           Zafar Takhirov
   site:           http://zafar.cc
   avatar:         images/me.jpg
-  bio:            "I am a 5th year PhD student at Boston University, working towards my degree in Computer Engineering. While my work focuses on digital design,error mitigation, and machine learning, my non-work interests range widely from information theory (go Shannon!), quantum computing, grandfather paradox, Star Trek, Little Mermaid, 'why is the grass green?', 1Q84, etc., etc., etc. If you want to talk about, well, anything - just ping me."
+  bio:            "I am a recent PhD graduate from Boston University. While my work focuses on digital design,error mitigation, and machine learning, my non-work interests range widely from information theory (go Shannon!), quantum computing, grandfather paradox, Star Trek, Little Mermaid, 'why is the grass green?', 1Q84, etc., etc., etc. If you want to talk about, well, anything - just ping me."
   email: cc.rafaz@zafar.cc
   # Twitter nick for use in Twitter cards and follow button.
   twitter: TJzafar # if no twitter in this config, the twitter follow button will be removed
