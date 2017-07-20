@@ -3,7 +3,7 @@ layout: post
 title: "Hungarian Algorithm"
 modified: 2017-07-19 13:43:27 -0700
 tags: [algorithms, bipartite matching, assignment]
-categories: [python]
+categories: [c++,python]
 description:
 image:
   feature:
@@ -92,7 +92,7 @@ Given a bipartite graph $$H$$ consisting of only tight edges, the Hungarian algo
 
 Given two parts of the bipartite graph: first $$F$$ and second $$S$$,
 
-1. Initially the potential is zero $$\forall i,j u[i] = v[i] = 0$$, and the pair list is empty $$\|M\|=0$$
+1. Initially the potential is zero $$\forall i,j: u[i] = v[i] = 0$$, and the pair list is empty $$\|M\|=0$$
 2. While maintaining the potential, try to find maximum number of matches.
 To achieve that we can use [any matching algorithm][wiki-hung].
 Hint: BFS and DFS can be quite efficient at this step.
