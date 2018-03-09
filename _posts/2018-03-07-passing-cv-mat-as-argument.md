@@ -17,8 +17,6 @@ In this post I would like to discuss what happens when `cv::Mat` is passed aroun
 
 <!-- more -->
 
-## What is `cv::Mat`?
-
 ## Changing the header of `cv::Mat`
 Consider the following examples[^1], where we want to change what the datastructure is.
 Note that we are trying to modify the HEADER of the `cv::Mat`, hence the behavior.
