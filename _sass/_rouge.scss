@@ -1,5 +1,5 @@
 .highlight {
-	margin-bottom: 1em;
+	margin-bottom: 0em;
 	@include font(12);
 	color: #d0d0d0;
 	// border: 1px solid darken($body-color, 5);
@@ -25,7 +25,7 @@
 	}
 	.gutter {
 		border-right: solid 1px #8f908a;
-		// float: left;
+		float: left;
 	}
 	.lineno { padding-right: 2px; color: #8f908a; }
 	.code {
