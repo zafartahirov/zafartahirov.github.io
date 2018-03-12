@@ -290,7 +290,7 @@
             "title": "RISC-V HW Machine Learning Accelerator",
             "website": "#",
             "startDate": "2016-05-15",
-            "endDate": "",
+            "endDate": "2017-11-01",
             "summary": "Hardware co-processor for machine learning acceleration written in Chisel (Scala) and designed layout using Cadence SoC toolchain",
             "highlights": [
             ]
@@ -301,7 +301,7 @@
             "title": "Identification and Authorization using Fingerprints",
             "website": "#",
             "startDate": "2016-04-15",
-            "endDate": "",
+            "endDate": "2017-03-15",
             "summary": "Python library for fingerprint identification using Bozorth 3 algorithm to be used as a substitute for username identification",
             "highlights": [
             ]
