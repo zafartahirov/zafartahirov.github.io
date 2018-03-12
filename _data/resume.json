@@ -148,6 +148,20 @@
     "awards": [],
     "publications": [
         {
+            "name": "[Patent] Ballistics Computation for Fast Approximation",
+            "publisher": "[drafting]",
+            "releaseDate": "",
+            "website": "#",
+            "summary": ""
+        },
+        {
+            "name": "[Patent] Probabilistic Navigation System and Method",
+            "publisher": "[pending]",
+            "releaseDate": "",
+            "website": "#",
+            "summary": ""
+        },
+        {
             "name": "[Novel Algorithm for Adaptive Classification]",
             "publisher": "[Publication not Released -- in preparation]",
             "releaseDate": "",

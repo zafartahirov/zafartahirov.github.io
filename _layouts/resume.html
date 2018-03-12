@@ -111,98 +111,10 @@
               </div>
             </div>
 
-            <!-- Projects -->
-            {% if resume.projects.size > 0 %}
-            <div id="volunteer-work" class="detail">
-              <div class="icon"><i class="fs-lg fa fa-cogs"></i>
-                <span class="mobile-title">Projects ({{ resume.projects.size }})</span>
-              </div>
-              <div class="info">
-                <h4 class="title text-uppercase">Projects ({{ resume.projects.size }})</h4>
-                <div class="content">
-                  <ul class="list-unstyled clear-margin">
-                    {% for project in resume.projects %}
-                    <li class="card card-nested">
-                      <div class="content">
-                        <p class="clear-margin relative">
-                          {% assign endDate = project.endDate %}
-                          {% unless endDate and endDate.size > 0 %}
-                            <i rel="tooltip" title="In progress" data-placement="left" class="fa fa-cog"
-                            {% if project.source == "open" %} style="color:green"
-                            {% elsif project.source == "closed" %} style="color:red"
-                            {% endif %}></i>
-                            {% assign endDate = "now" %}
-                          {% endunless %}
-
-                          {% if endDate.size > 0 %}
-                            {% if project.status == "completed" and project.source == "open" %}
-                              <i rel="tooltip" title="Open-source" data-placement="left" class="fa fa-check-square-o" style="color:green"></i>
-                            {% elsif project.status == "completed" and project.source == "closed" %}
-                              <i rel="tooltip" title="Closed-source" data-placement="left" class="fa fa-check-square-o" style="color:red"></i>
-                            {% endif %}
-                          {% endif %}
-                          <a href="{{ project.website }}" target="_blank"><strong>{{ project.title }}</strong></a>
-                        </p>
-                        <div class="text-muted">
-                          <small>
-                            <span class="space-right">
-                          {{ project.status }} (as of {{ endDate | date: "%b, %Y" }})
-                          </span>
-                          </small>
-                        </div>
-
-                        <div class="mop-wrapper">
-                          <p>{{ project.summary }}</p>
-                        </div>
-                        <ul>
-                        {% for highlight in project.highlights %}
-                          <li class="mop-wrapper">
-                            <p>{{ highlight }}</p>
-                          </li>
-                        {% endfor %}
-                        </ul>
-                      </div>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {% endif %}
-
-            <!-- Skills -->
-            {% if resume.skills.size > 0 %}
-            <div id="skills" class="detail">
-              <div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div>
-              <div class="info">
-                <h4 class="title text-uppercase">Skills</h4>
-                <div class="content">
-                  <ul class="list-unstyled clear-margin">
-                    {% for skillset in resume.skills %}
-                      <li class="card card-nested card-skills">
-                        <div data-toggle="tooltip" title="{{ skillset.level }}" data-placement="left" class="skill-level">
-                          <div class="skill-progress {{ skillset.level | downcase }}"></div>
-                        </div>
-                        <div class="skill-info">
-                          <strong>{{ skillset.name }}</strong>
-                          <div class="space-top labels">
-                            {% for skill in skillset.keywords %}
-                              <span class="label label-keyword">{{ skill }}</span>
-                            {% endfor %}
-                          </div>
-                        </div>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {% endif %}
-
             <!-- Work -->
             {% if resume.work.size > 0 %}
             <div id="work-experience" class="detail">
-              <div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience ({{ resume.work.size }})</span></div>
+              <div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div>
               <div class="info">
                 <h4 class="title text-uppercase">Work Experience ({{ resume.work.size }})</h4>
                 <ul class="list-unstyled clear-margin">
@@ -267,7 +179,7 @@
             <!-- Education -->
             {% if resume.education.size > 0 %}
             <div id="education" class="detail">
-              <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education ({{ resume.education.size }})</span></div>
+              <div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div>
               <div class="info">
                 <h4 class="title text-uppercase">Education ({{ resume.education.size }})</h4>
                 <div class="content">
@@ -309,10 +221,98 @@
             </div>
             {% endif %}
 
+            <!-- Skills -->
+            {% if resume.skills.size > 0 %}
+            <div id="skills" class="detail">
+              <div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div>
+              <div class="info">
+                <h4 class="title text-uppercase">Skills</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    {% for skillset in resume.skills %}
+                      <li class="card card-nested card-skills">
+                        <div data-toggle="tooltip" title="{{ skillset.level }}" data-placement="left" class="skill-level">
+                          <div class="skill-progress {{ skillset.level | downcase }}"></div>
+                        </div>
+                        <div class="skill-info">
+                          <strong>{{ skillset.name }}</strong>
+                          <div class="space-top labels">
+                            {% for skill in skillset.keywords %}
+                              <span class="label label-keyword">{{ skill }}</span>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
+            <!-- Projects -->
+            {% if resume.projects.size > 0 %}
+            <div id="volunteer-work" class="detail">
+              <div class="icon"><i class="fs-lg fa fa-cogs"></i>
+                <span class="mobile-title">Projects</span>
+              </div>
+              <div class="info">
+                <h4 class="title text-uppercase">Projects ({{ resume.projects.size }})</h4>
+                <div class="content">
+                  <ul class="list-unstyled clear-margin">
+                    {% for project in resume.projects %}
+                    <li class="card card-nested">
+                      <div class="content">
+                        <p class="clear-margin relative">
+                          {% assign endDate = project.endDate %}
+                          {% unless endDate and endDate.size > 0 %}
+                            <i rel="tooltip" title="In progress" data-placement="left" class="fa fa-cog"
+                            {% if project.source == "open" %} style="color:green"
+                            {% elsif project.source == "closed" %} style="color:red"
+                            {% endif %}></i>
+                            {% assign endDate = "now" %}
+                          {% endunless %}
+
+                          {% if endDate.size > 0 %}
+                            {% if project.status == "completed" and project.source == "open" %}
+                              <i rel="tooltip" title="Open-source" data-placement="left" class="fa fa-check-square-o" style="color:green"></i>
+                            {% elsif project.status == "completed" and project.source == "closed" %}
+                              <i rel="tooltip" title="Closed-source" data-placement="left" class="fa fa-check-square-o" style="color:red"></i>
+                            {% endif %}
+                          {% endif %}
+                          <a href="{{ project.website }}" target="_blank"><strong>{{ project.title }}</strong></a>
+                        </p>
+                        <div class="text-muted">
+                          <small>
+                            <span class="space-right">
+                          {{ project.status }} (as of {{ endDate | date: "%b, %Y" }})
+                          </span>
+                          </small>
+                        </div>
+
+                        <div class="mop-wrapper">
+                          <p>{{ project.summary }}</p>
+                        </div>
+                        <ul>
+                        {% for highlight in project.highlights %}
+                          <li class="mop-wrapper">
+                            <p>{{ highlight }}</p>
+                          </li>
+                        {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+
             <!-- Awards -->
             {% if resume.awards.size > 0 %}
             <div id="awards" class="detail">
-              <div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards ({{ resume.awards.size }})</span></div>
+              <div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div>
               <div class="info">
                 <h4 class="title text-uppercase">Awards ({{ resume.awards.size }})</h4>
                 <div class="content">
@@ -337,7 +337,7 @@
             <!-- Volunteer Work -->
             {% if resume.volunteer.size > 0 %}
             <div id="volunteer-work" class="detail">
-              <div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work ({{ resume.volunteer.size }})</span></div>
+              <div class="icon"><i class="fs-lg icon-child"></i><span class="mobile-title">Volunteer Work</span></div>
               <div class="info">
                 <h4 class="title text-uppercase">Volunteer Work ({{ resume.volunteer.size }})</h4>
                 <div class="content">
@@ -376,9 +376,9 @@
             <!-- Publications -->
             {% if resume.publications.size > 0 %}
             <div id="publications" class="detail">
-              <div class="icon"><i class="fs-lg icon-newspaper"></i><span class="mobile-title">Publications ({{ resume.publications.size }})</span></div>
+              <div class="icon"><i class="fs-lg icon-newspaper"></i><span class="mobile-title">Publications & Patents</span></div>
               <div class="info">
-                <h4 class="title text-uppercase">Publications ({{ resume.publications.size }})</h4>
+                <h4 class="title text-uppercase">Publications & Patents ({{ resume.publications.size }})</h4>
                 <div class="content">
                   <ul class="list-unstyled clear-margin">
                   {% for pub in resume.publications %}
@@ -386,12 +386,11 @@
                       <div class="content">
                         <p class="clear-margin">
                           <strong>
-                            <a href="{{ pub.website }}" target="_blank">{{ pub.name }}</a>
-                            &nbsp;,&nbsp;
+                            <a href="{{ pub.website }}" target="_blank">{{ pub.name }}</a>,&nbsp;
                           </strong>
                           {{ pub.publisher }}
                         </p>
-                        <p class="text-muted"><small>Published on: {% if pub.releaseDate and pub.releaseDate.size > 0 %}{{ pub.releaseDate }}{% else %}[N/A]{% endif %}</small></p>
+                        <p class="text-muted"><small>Released: {% if pub.releaseDate and pub.releaseDate.size > 0 %}{{ pub.releaseDate }}{% else %}[Pending]{% endif %}</small></p>
                         <div class="mop-wrapper">
                           <p>{{ pub.summary }}</p>
                         </div>
@@ -431,7 +430,7 @@
             <!-- References -->
             {% if resume.references.size > 0 %}
             <div id="references" class="detail">
-              <div class="icon"><i class="fs-lg icon-thumbs-up"></i><span class="mobile-title">References ({{ resume.references.size }})</span></div>
+              <div class="icon"><i class="fs-lg icon-thumbs-up"></i><span class="mobile-title">References</span></div>
               <div class="info">
                 <h4 class="title text-uppercase">References ({{ resume.education.size }})</h4>
                 <div class="content">
