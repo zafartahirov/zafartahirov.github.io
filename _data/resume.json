@@ -47,7 +47,8 @@
             "summary": "Making self-driving cars possible",
             "highlights": [
                 "I fooled you, I fooled you, I got pig iron, I got pig iron, I got all pig iron...",
-                "What can be cooler than robots and lazers? I get to work with both :)"
+                "What can be cooler than robots and lazers? I get to work with both :)",
+                "Driving using cameras only? Don't think so! Oh wait..."
             ]
         },
         {
@@ -111,7 +112,7 @@
             "area": "Computer Engineering",
             "studyType": "Ph.D",
             "startDate": "2012-09-01",
-            "endDate": "2017-08-01",
+            "endDate": "2018-01-25",
             "gpa": "3.5",
             "courses": [
                 "Dissertation: Designing Energy-Efficient Computing Systems using Equalization and Machine Learning",
@@ -284,7 +285,7 @@
             ]
         },
         {
-            "status": "in progress",
+            "status": "completed",
             "source": "closed",
             "title": "RISC-V HW Machine Learning Accelerator",
             "website": "#",
@@ -295,7 +296,7 @@
             ]
         },
         {
-            "status": "in progress",
+            "status": "completed",
             "source": "closed",
             "title": "Identification and Authorization using Fingerprints",
             "website": "#",
