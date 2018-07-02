@@ -93,7 +93,7 @@ number of elements in an array, etc., while $$ k = n / 1000 $$
 | `pow(x,y,z)`| Modular Exponentiation| $$O(n^3)$$  | $$ 1071.8 + 3107.9k^3 $$  | 1.7       |
 | `2**n`      | Power of two          | $$O(1)$$    | $$ 0.02 $$                | 0.41      |
 
-[^1]: I was expecting the conversion to be linear, but it is quadratic. After a brief search found [this SO answer](http://stackoverflow.com/a/1845764/3606192) that mentions Python conversion being $$O(n^2)$$
+[^1]: I was expecting the conversion to be linear, but it is quadratic. After a brief search I found [this SO answer](http://stackoverflow.com/a/1845764/3606192) that mentions Python conversion being $$O(n^2)$$
 
 ### String[^2]
 
