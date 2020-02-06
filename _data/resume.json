@@ -41,9 +41,22 @@
     },
     "work": [
         {
+            "company": "Facebook Inc.",
+            "position": "Research Scientist",
+            "startDate": "2018-12-03",
+            "summary": "Open-Sourcing some AI Stuff",
+            "highlights": [
+                "PyTorch Quantization",
+                "Kernel Development",
+                "Coffee Drinking",
+                "Research stuff..."
+            ]
+        },
+        {
             "company": "Didi Research America, LLC",
             "position": "Software Developer II",
             "startDate": "2017-05-29",
+            "endDate": "2018-11-30",
             "summary": "Making self-driving cars possible",
             "highlights": [
                 "I fooled you, I fooled you, I got pig iron, I got pig iron, I got all pig iron...",
@@ -148,68 +161,12 @@
     "awards": [],
     "publications": [
         {
-            "name": "[Patent] Ballistics Computation for Fast Approximation",
-            "publisher": "[drafting]",
+            "name": "Download the PDF to see the List of Patents and Publications",
+            "publisher": "",
             "releaseDate": "",
             "website": "#",
             "summary": ""
         },
-        {
-            "name": "[Patent] Probabilistic Navigation System and Method",
-            "publisher": "[pending]",
-            "releaseDate": "",
-            "website": "#",
-            "summary": ""
-        },
-        {
-            "name": "[Novel Algorithm for Adaptive Classification]",
-            "publisher": "[Publication not Released -- in preparation]",
-            "releaseDate": "",
-            "website": "",
-            "summary": "A new adaptive algorithm was developed and implemented."
-        },
-        {
-            "name": "Field of Groves: An Energy-Efficient Random Forest",
-            "publisher": "arXiv preprint arXiv:1704.02978",
-            "releaseDate": "2017-04-10",
-            "website": "https://arxiv.org/abs/1704.02978",
-            "summary": "Developed a novel energy-efficient scalable algorithm based on Random Forests."
-        },
-        {
-            "name": "Energy-Efficient Adaptive Classifier Design for Mobile Systems",
-            "publisher": "IEEE ISLPED'16",
-            "releaseDate": "2016-08-08",
-            "website": "http://dx.doi.org/10.1145/2934583.2934615",
-            "summary": "Implemented an algorithm that leverages the wide variability in data complexity to allow dynamic resource allocation in classification problems"
-        },
-        {
-            "name": "Energy-efficient pass-transistor-logic using decision feedback equalization",
-            "publisher": "IEEE ISLPED'13",
-            "releaseDate": "2013-09-04",
-            "website": "http://dx.doi.org/10.1109/ISLPED.2013.6629319",
-            "summary": ""
-        },
-        {
-            "name": "A multi-layer approach to green computing: Designing energy-efficient digital circuits and manycore architectures",
-            "publisher": "IEEE IGCC'12",
-            "releaseDate": "2012-06-04",
-            "website": "http://dx.doi.org/10.1109/IGCC.2012.6322276",
-            "summary": ""
-        },
-        {
-            "name": "Error mitigation in digital logic using a feedback equalization with schmitt trigger (FEST) circuit",
-            "publisher": "IEEE ISQED'12",
-            "releaseDate": "2012-03-19",
-            "website": "http://dx.doi.org/10.1109/ISQED.2012.6187511",
-            "summary": ""
-        },
-        {
-            "name": "A preliminary look at error avoidance in digital logic via feedback equalization",
-            "publisher": "IEEE Allerton Conferece",
-            "releaseDate": "2011-09-28",
-            "website": "http://dx.doi.org/10.1109/Allerton.2011.6120329",
-            "summary": ""
-        }
     ],
     "skills": [
         {
@@ -290,11 +247,11 @@
         {
             "status": "in progress",
             "source": "open",
-            "title": "TensorFlow and SciKit Tutorial Library",
-            "website": "#",
-            "startDate": "2016-09-15",
+            "title": "PyTorch Tutorial Library",
+            "website": "http://www.zbrain.io/pytorch",
+            "startDate": "2018-09-15",
             "endDate": "",
-            "summary": "Python library for machine learning 'black boxes'",
+            "summary": "Python Tutorials for machine learning",
             "highlights": [
             ]
         },
