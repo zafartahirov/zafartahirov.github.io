@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-gem 'rake', '10.0.2'
+gem 'rake', '>=12.3.3'
 
-gem 'github-pages', '104', group: :jekyll_plugins
+gem 'github-pages', group: :jekyll_plugins
 gem 'rouge'
 
 gem 'stringex'
